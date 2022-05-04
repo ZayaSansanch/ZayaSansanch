@@ -5,25 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/MultiLanguage.js"></script>
     <link rel="stylesheet" href="styles/style.css">
     <title id="title"></title>
 </head>
 
 <body>
     <div id="ocnova">
-        <div id="card1" class="card"></div>
+        <div id="card1" class="card">
+            <h1 id="InfoTitle"></h1>
+            <h3 id="Lan"></h3>
+            <div style="margin: 1vw 6vw 0 6vw; display: flex; flex-direction: row;  height: 2vw;">
+                <button style="width: 50%; margin: 0 0.5vw 0 0; font-size: 150%;" id="Eng" onclick="Eng()"></button>
+                <button style="width: 50%; margin: 0 0 0 0.5vw; font-size: 150%;" id="Rus" onclick="Rus()"></button>
+            </div>
+        </div>
         <div id="card2" class="card"></div>
         <div id="card3" class="card"></div>
         <div id="card4" class="card"></div>
         <div id="card5" class="card"></div>
 
-        <button id="ButtonInfo" onclick="location.href('info.html')" style="z-index: 100; position: relative; align-items: center;"></button>
+        <!-- <div style="z-index: 100; position: relative; border-radius: 10px;">
+            <button id="ButtonInfo" onclick="location.href = 'info.html'" style="align-items: center;"></button>
+        </div> -->
         <div id="buttons">
-            <button id="ButtonWinOne" onclick="PlusOne()" style="z-index: 100; position: relative; align-items: center;"></button>
+            <button id="ButtonWinOne" onclick="if (now < 5) {PlusOne()}" style="z-index: 100; position: relative; align-items: center;"></button>
         </div>
         <div id="buttons2">
-            <button id="ButtonWinTwo" onclick="MinsOne()" style="z-index: 100; position: relative; align-items: center;"></button>
+            <button id="ButtonWinTwo" onclick="if (now > 1) {MinsOne()}" style="z-index: 100; position: relative; align-items: center;"></button>
         </div>
     </div>
 </body>
