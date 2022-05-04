@@ -1,0 +1,26 @@
+<!-- <section id="winone">
+    <h1>Ega</h1>
+    <p>QWERTYUIOP[]ASDFGHJKL;'\ZXCVBBNM,./qwertyuiop[]asdfghjkl;'\zxcvbnm,./йцукенгшщзхъфывапролджэ\ячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭ\ЯЧСМИТЬБЮ.</p>
+</section>
+
+<section id="wintwo">
+    <p>QWERTYUIOP[]ASDFGHJKL;'\ZXCVBBNM,./qwertyuiop[]asdfghjkl;'\zxcvbnm,./йцукенгшщзхъфывапролджэ\ячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭ\ЯЧСМИТЬБЮ.</p>
+</section>
+
+<section id="wintree">
+    <p>QWERTYUIOP[]ASDFGHJKL;'\ZXCVBBNM,./qwertyuiop[]asdfghjkl;'\zxcvbnm,./йцукенгшщзхъфывапролджэ\ячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭ\ЯЧСМИТЬБЮ.</p>
+</section>
+
+<p>QWERTYUIOP[]ASDFGHJKL;'\ZXCVBBNM,./qwertyuiop[]asdfghjkl;'\zxcvbnm,./йцукенгшщзхъфывапролджэ\ячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭ\ЯЧСМИТЬБЮ.</p> -->\
+
+<!-- #wintwo {
+    font-family: serif;
+}
+
+#wintree {
+    font-family: handwritten;
+} -->
+
+<!-- body {
+    font-family: sans-serif;
+} -->
