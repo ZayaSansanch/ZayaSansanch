@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerver</title>
+</head>
+
+<body>
+    <button onclick="plus1()">+1</button>
+    <button onclick="plus0()">0</button>
+
+    <h1 id="ind">0</h1>
+</body>
+
+<style>
+    body {
+        font-family: sans-serif;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #div2 {
+        /* display: grid;
+        grid-template-columns: 33% auto 33%; */
+        height: 100%;
+        width: 100%;
+        margin: 10%;
+        background-color: aqua;
+    }
+</style>
+
+<script>
+    // var ind = MediaStreamAudioDestinationNode
+    var ind = document.getElementById("ind")
+    console.log(ind)
+    var chislo = localStorage.getItem("chislo") || 0;
+    ind.innerHTML = chislo
+
+    function plus1() {
+        chislo++
+        localStorage.setItem("chislo", chislo)
+        ind.innerHTML = chislo
+    }
+
+    function plus0() {
+        chislo = 0
+        localStorage.setItem("chislo", chislo)
+        ind.innerHTML = chislo
+    }
+</script>
+
+</html>
+
+
+
+<!-- <h1>Cerver!</h1>
+
+<div id="div2"></div> -->
