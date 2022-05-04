@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/MultiLanguage.js"></script>
+    <title>Ega</title>
+</head>
+
+<body>
+    <div id="ocnova">
+        <div class="o3" id="ol3">
+            <h2>text3</h2>
+        </div>
+        <div class="o2" id="ol2">
+            <h2>text2</h2>
+        </div>
+        <div class="o1" id="ol1">
+            <h2>text1</h2>
+        </div>
+    </div>
+    <script>
+        var num = 1
+        var ol1 = document.getElementById('ol1')
+        var ol2 = document.getElementById('ol2')
+        var ol3 = document.getElementById('ol3')
+
+        // setInterval(sdvig, 1500, 10)
+
+        function sdvig() {
+            if (num == 1) {
+                ol1.classList.add('vnepola')
+            }
+            if (num == 2) {
+                ol2.classList.add('vnepola')
+            }
+            if (num == 3) {
+                ol1.classList.remove('vnepola')
+
+                ol2.classList.remove('vnepola')
+                num = 0
+            }
+            num++
+            console.log({
+                num: num
+            })
+        }
+    </script>
+    <style>
+        #ocnova {
+            background-color: aqua;
+            margin: 0;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            /* overflow: hidden; */
+            border-radius: 2rem;
+            cursor: pointer;
+            color: #000;
+        }
+        
+        .o1 {
+            text-align: center;
+            /* background-color: rgb(200, 200, 200); */
+            background-color: rgb(0, 255, 0);
+            height: 100%;
+            position: relative;
+            top: -460px;
+            right: 0px;
+            margin: 0;
+            transition: 1s;
+        }
+        
+        .o2 {
+            text-align: center;
+            /* background-color: rgb(200, 200, 200); */
+            background-color: rgb(0, 0, 255);
+            height: 100%;
+            position: relative;
+            top: -240px;
+            right: 0px;
+            margin: 0;
+            transition: 1s;
+        }
+        
+        .o3 {
+            text-align: center;
+            /* background-color: rgb(200, 200, 200); */
+            background-color: rgb(255, 0, 0);
+            height: 100%;
+            position: relative;
+            top: -20px;
+            right: 0px;
+            margin: 0;
+        }
+        
+        .vnepola {
+            position: relative;
+            right: 105%;
+            transition: 1.5s;
+        }
+    </style>
+</body>
+
+</html>
+
+
+
+<!-- <button onclick="Rus()">Rus</button>
+<button onclick="Eng()">Eng</button>
+
+<section id="winone">
+    <h1 id="l.ega">Ega</h1>
+</section> -->
