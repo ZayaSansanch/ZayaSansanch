@@ -15,8 +15,10 @@
             <h1 id="InfoTitle"></h1>
             <h3 id="Lan"></h3>
             <div style="margin: 1vw 6vw 0 6vw; display: flex; flex-direction: row;  height: 2vw;">
-                <button style="width: 50%; margin: 0 0.5vw 0 0; font-size: 150%;" id="Eng" onclick="Eng()"></button>
-                <button style="width: 50%; margin: 0 0 0 0.5vw; font-size: 150%;" id="Rus" onclick="Rus()"></button>
+                <button style="width: 25%; margin: 0 0.5vw 0 0; font-size: 150%;" id="Eng" onclick="Eng()"></button>
+                <button style="width: 25%; margin: 0 0.5vw 0 0.5vw; font-size: 150%;" id="Rus" onclick="Rus()"></button>
+                <button style="width: 25%; margin: 0 0.5vw 0 0.5vw; font-size: 150%;" id="Frc" onclick="Frc()"></button>
+                <button style="width: 25%; margin: 0 0 0 0.5vw; font-size: 150%;" id="Nem" onclick="Nem()"></button>
             </div>
         </div>
         <div id="card2" class="card"></div>
@@ -27,12 +29,15 @@
         <!-- <div style="z-index: 100; position: relative; border-radius: 10px;">
             <button id="ButtonInfo" onclick="location.href = 'info.html'" style="align-items: center;"></button>
         </div> -->
-        <div id="buttons">
-            <button id="ButtonWinOne" onclick="if (now < 5) {PlusOne()}" style="z-index: 100; position: relative; align-items: center;"></button>
-        </div>
-        <div id="buttons2">
-            <button id="ButtonWinTwo" onclick="if (now > 1) {MinsOne()}" style="z-index: 100; position: relative; align-items: center;"></button>
-        </div>
+    </div>
+
+    <div id="buttons">
+        <!-- <button id="ButtonWinOne" onclick="if (now < 5) {PlusOne()}" style="z-index: 100; position: relative; align-items: center;"></button> -->
+        <div class="treal" id="ButtonWinOne" onclick="if (now < 5) {PlusOne()}" style="transform: rotate(-90deg);"></div>
+    </div>
+    <div id="buttons2">
+        <!-- <button id="ButtonWinTwo" onclick="if (now > 1) {MinsOne()}" style="z-index: 100; position: relative; align-items: center;"></button> -->
+        <div class="treal" id="ButtonWinTwo" onclick="if (now > 1) {MinsOne()}" style="transform: rotate(90deg);"></div>
     </div>
 </body>
 

@@ -10,6 +10,10 @@ if (language == "Eng") {
     Eng()
 } else if (language == "Rus") {
     Rus()
+} else if (language == "Frc") {
+    Frc()
+} else if (language == "Nem") {
+    Nem()
 } else {
     console.error("Language unknown: " + language)
 }
@@ -32,15 +36,16 @@ function Rus() {
     console.log("Language: Rus")
     language = "Rus"
     localStorage.setItem("language", "Rus")
-    setText("ButtonWinOne", "Далее")
-    setText("ButtonWinOne", "Далее")
-    setText("ButtonWinTwo", "Назад")
-    // setText("ButtonInfo", "Инфо")
+    // setText("ButtonWinOne", "Далее")
+    // setText("ButtonWinTwo", "Назад")
     setText("InfoTitle", "Инфо")
-    // setText("Backk", "Назад")
     setText("Lan", "Язык:")
+    // setText("ButtonInfo", "Инфо")
+    // setText("Backk", "Назад")
     setText("Eng", "Eng")
     setText("Rus", "Rus")
+    setText("Frc", "Frc")
+    setText("Nem", "Nem")
 }
 
 function Eng() {
@@ -48,16 +53,56 @@ function Eng() {
     //     '{title: Yoga, next: Next, back: Back}'
     // );
     console.log("Language: Eng")
-    language = "Rus"
+    language = "Eng"
     localStorage.setItem("language", "Eng")
-    setText("ButtonWinOne", "Next")
-    setText("ButtonWinTwo", "Back")
-    // setText("ButtonInfo", "Info")
+    // setText("ButtonWinOne", "Next")
+    // setText("ButtonWinTwo", "Back")
     setText("InfoTitle", "Info")
-    // setText("Backk", "Back")
     setText("Lan", "Language:")
+    // setText("ButtonInfo", "Info")
+    // setText("Backk", "Back")
     setText("Eng", "Eng")
     setText("Rus", "Rus")
+    setText("Frc", "Frc")
+    setText("Nem", "Nem")
+}
+
+function Frc() {
+    // WinOne = JSON.parse(
+    //     '{title: Yoga, next: Next, back: Back}'
+    // );
+    console.log("Language: Frc")
+    language = "Frc"
+    localStorage.setItem("language", "Frc")
+    // setText("ButtonWinOne", "Puis")
+    // setText("ButtonWinTwo", "Arrière")
+    setText("InfoTitle", "Info")
+    setText("Lan", "Français:")
+    // setText("ButtonInfo", "Info")
+    // setText("Backk", "Back")
+    setText("Eng", "Eng")
+    setText("Rus", "Rus")
+    setText("Frc", "Frc")
+    setText("Nem", "Nem")
+}
+
+function Nem() {
+    // WinOne = JSON.parse(
+    //     '{title: Yoga, next: Next, back: Back}'
+    // );
+    console.log("Language: Nem")
+    language = "Nem"
+    localStorage.setItem("language", "Nem")
+    // setText("ButtonWinOne", "Weiter")
+    // setText("ButtonWinTwo", "Zurück")
+    setText("InfoTitle", "Info")
+    setText("Lan", "Sprache:")
+    // setText("ButtonInfo", "Info")
+    // setText("Backk", "Back")
+    setText("Eng", "Eng")
+    setText("Rus", "Rus")
+    setText("Frc", "Frc")
+    setText("Nem", "Nem")
 }
 
 

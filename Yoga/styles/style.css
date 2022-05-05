@@ -27,6 +27,14 @@ h1 {
     position: relative;
 }
 
+.treal {
+    /* background-color: aquamarine; */
+    border: 20px solid transparent; /* Прозрачные границы */
+    border-top: 20px solid grey; /* Добавляем треугольник */
+    height: 1px;
+    width: 1px;
+}
+
 #card5 {
     background-color: rgb(238, 71, 230);
 }
@@ -70,7 +78,7 @@ button {
     width: 5vw;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 0;
     /* background-color: rgb(205, 255, 206); */
     display: flex;
     flex-direction: row;
@@ -82,12 +90,14 @@ button {
     width: 5vw;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 0;
     /* background-color: rgb(205, 255, 206); */
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+
 
 #ButtonWinOne {
     text-align: center;
@@ -190,4 +200,5 @@ h3 {
 button {
     border: none;
     border-radius: 0.5vw;
+    height: 5vw;
 }
