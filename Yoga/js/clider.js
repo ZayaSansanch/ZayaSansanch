@@ -14,7 +14,7 @@ var back = document.getElementById("ButtonWinTwo")
 
 // setInterval(PlusOne(), 1000)
 
-back.style.opacity = 0
+// back.style.opacity = 0
 
 if (window.screen.width < 700) {
     document.getElementById("ocnova").addEventListener('touchstart', handleTouchStart, false)

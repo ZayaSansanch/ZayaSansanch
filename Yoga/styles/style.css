@@ -29,10 +29,13 @@ h1 {
 
 .treal {
     /* background-color: aquamarine; */
-    border: 20px solid transparent; /* Прозрачные границы */
-    border-top: 20px solid grey; /* Добавляем треугольник */
-    height: 1px;
-    width: 1px;
+    /* border: 20px solid transparent;
+    border-top: 20px solid grey; */
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    position: static;
+    z-index: 1000;
 }
 
 #card5 {
@@ -109,6 +112,8 @@ button {
     text-align: center;
     padding: 0;
     font-size: 175%;
+    background-color: rgb(200, 200, 200);
+    position: static;
 }
 
 #ButtonWinTwo {
@@ -121,6 +126,9 @@ button {
     text-align: center;
     padding: 0;
     font-size: 175%;
+    background-color: rgb(200, 200, 200);
+    position: static;
+    transform: rotate(-180deg);
 }
 
 #ButtonInfo {
@@ -148,7 +156,7 @@ button {
 } */
 
 @media only screen and (max-width: 600px) {
-    #ButtonWinOne {
+    /* #ButtonWinOne {
         height: 20vw;
         width: 20vw;
         border-radius: 5vw;
@@ -162,10 +170,11 @@ button {
         border-radius: 5vw;
         opacity: 0.25;
         padding: 0;
-    }
+    } */
 
     #buttons, #buttons2 {
-        width: 20vw;
+        /* width: 20vw; */
+        top: -100%;
     }
 }
 

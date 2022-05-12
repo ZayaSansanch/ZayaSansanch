@@ -1,0 +1,11 @@
+main {
+    margin: 10px 0 0 0;
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 200px auto 200px auto 200px;
+    grid-template-rows: 500px 500px;
+}
+main div {
+    margin: 0 10px 10px 0;
+    background-color: aqua;
+}

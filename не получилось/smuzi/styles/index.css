@@ -1,0 +1,79 @@
+/* html */
+
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    /* overflow-x: hidden; */
+}
+
+.site {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: min(100%);
+    height: 1000%;
+    width: 100%;
+}
+
+/* main */
+
+main {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+main .h1 {
+    margin: 10 0 0 0;
+}
+
+/* h1 */
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+/* nav */
+
+nav {
+    /* display: inline; */
+    position: static;
+    display: flex;
+    height: 50px;
+    box-shadow: 1px 5px 6px -1px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 1px 5px 6px -1px rgba(0,0,0,0.5);
+    -moz-box-shadow: 1px 5px 6px -1px rgba(0,0,0,0.5);
+}
+.navUl {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: auto 100px auto auto;
+    color: grey;
+    cursor: pointer;
+}
+.navUl .ul {
+    margin: 0 10px 0 0;
+    text-decoration: none;
+    padding: 0;
+}
+.nav .navLogo {
+    margin: auto 0 auto 10px;
+    cursor: auto;
+}
+
+/* jsAnimate */
+
+.op2 {
+    margin: 0 0 0 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.op1 {
+    margin: 0 0 0 100px;
+    opacity: 0;
+    transition: 1s;
+}

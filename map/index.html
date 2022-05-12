@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+        <title>Our map!</title>
+        <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    </head>
+    <body>
+        <div id = "map" style = "width: 100vw; height: 100vh; position: absolute; top: 0; left: 0;"></div>
+        <script>
+            var mapOptions = {
+            center: [7.833835, 98.330323],
+            zoom: 13
+            }
+            
+            var map = new L.map('map', mapOptions);
+            
+            var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+            
+            map.addLayer(layer);
+
+            // var marker = L.marker([7.833835, 98.330323]);
+
+            var greenIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+            var redIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+            var blueIcon = new L.Icon({
+                iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+                shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+
+            L.marker([7.833835, 98.330323], {icon: greenIcon}).addTo(map);
+            // L.marker([7.819035, 98.350323], {icon: greenIcon}).addTo(map);
+            // L.marker([7.819394, 98.350864], {icon: greenIcon}).addTo(map);
+
+            L.marker([7.827387, 98.312711], {icon: blueIcon}).addTo(map);
+            // L.marker([7.820390, 98.297573], {icon: blueIcon}).addTo(map);
+            L.marker([7.758471, 98.303022], {icon: blueIcon}).addTo(map);
+            L.marker([8.039195, 98.391332], {icon: blueIcon}).addTo(map);
+            L.marker([7.891996, 98.368320], {icon: blueIcon}).addTo(map);
+            L.marker([7.859038, 98.327378], {icon: blueIcon}).addTo(map);
+
+            L.marker([7.849945, 98.363230], {icon: redIcon}).addTo(map);
+            L.marker([7.890243, 98.337066], {icon: redIcon}).addTo(map);
+            L.marker([7.969052, 98.331592], {icon: redIcon}).addTo(map);
+
+            marker.addTo(map);
+        </script>
+    </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Map!</title>
+</head>
+<body>
+    <div id="map" style="margin: 0; padding: 0; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"></div>
+</body>
+
+<script>
+    var map = L.map('map').fitWorld();  
+    
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {  
+        maxZoom: 18,  
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +  
+            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +  
+            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',  
+        id: 'mapbox.streets'  
+    }).addTo(map);  
+
+    function onLocationFound(e) {  
+        var radius = e.accuracy / 2;  
+
+        L.marker(e.latlng).addTo(map)  
+            .bindPopup("You are within " + radius + " meters from this point").openPopup();  
+
+        L.circle(e.latlng, radius).addTo(map);  
+    }  
+
+    function onLocationError(e) {  
+        alert(e.message);  
+    }  
+
+    map.on('locationfound', onLocationFound);  
+    map.on('locationerror', onLocationError);  
+
+    map.locate({setView: true, maxZoom: 16});  
+</script>
+
+</html> -->

@@ -57,6 +57,8 @@ function Eng() {
     localStorage.setItem("language", "Eng")
     // setText("ButtonWinOne", "Next")
     // setText("ButtonWinTwo", "Back")
+    setText("ButtonWinOne", "")
+    setText("ButtonWinTwo", "")
     setText("InfoTitle", "Info")
     setText("Lan", "Language:")
     // setText("ButtonInfo", "Info")
