@@ -1,0 +1,28 @@
+body, html {
+	font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+	background-image: url("../_sysdata/BG.jpg");
+}
+
+header {
+	margin: 15px 0 0 0;
+} header h1 {
+	text-align: center;
+	margin: 1vh auto;
+} header p {
+	text-align: center;
+	margin: 1vh auto;
+}
+
+#cards {
+	display: flex;
+	flex-direction: column;
+} .card {
+	display: flex;
+	flex-direction: row;
+	width: 100vw;
+	height: 10rem;
+	background-color: #ffffffaa;
+	margin: 1rem 0;
+} img {
+	height: 9rem;
+}
