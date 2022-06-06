@@ -1,0 +1,56 @@
+html, body {
+    margin: 0px;
+}
+
+body {
+    font-family: SF Pro TH, SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.scroll-line-main {
+    height: 430px;
+    width: 100vw;
+    /* background-color: black; */
+    overflow: hidden;
+}
+.scroll-line {
+    margin: 10px 0 0 0;
+    /* background-color: red; */
+    display: flex;
+}
+.scroll-line img {
+    height: 400px;
+    width: auto;
+    margin: 10px;
+}
+
+.scroll-line-animate {
+    animation: 3s linear scroll-animate;
+}
+
+@keyframes scroll-animate {
+    0% {
+        left: 0px;
+    }
+    49.9% {
+        left: 100vw;
+    }
+}
+
+/* .scroll-line-animate {
+    animation: 3s linear infinite;
+    animation-name: scroll-line-animate-animate;
+}
+
+@keyframes scroll-line-animate-animate {
+    0% {
+        left: 0px;
+    }
+    49.9% {
+        left: 100vw;
+    }
+} */

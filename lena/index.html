@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lena</title>
+</head>
+<body>
+    <div class="ocnova">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+        <div class="line" id="line4"></div>
+        <div class="line" id="line5"></div>
+    </div>
+    <!-- </div>5 -->
+</body>
+
+<style>
+    .ocnova {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: min(50px);
+        width: min(100vw);
+    }
+
+    .line {
+        position: relative;
+        left: 0px;
+        height: min(50px);
+        width: min(100vw);
+        margin: 0 0 10px 0;
+        background-color: black;
+    }
+    /* .line {
+        margin: 0 0 10px 0;
+        background-color: black;
+        height: min(50px);
+        width: min(100vw);
+    } */
+</style>
+
+<script>
+    var l1 = document.getElementById("line1")
+    var l2 = document.getElementById("line2")
+    var l3 = document.getElementById("line3")
+    var l4 = document.getElementById("line4")
+    var l5 = document.getElementById("line5")
+
+    l1.style.left = 050 + "px"
+    l2.style.left = 100 + "px"
+    l3.style.left = 150 + "px"
+    l4.style.left = 200 + "px"
+    l5.style.left = 250 + "px"
+
+    l1.style.width = 900 + "px"
+    l2.style.width = 900 + "px"
+    l3.style.width = 900 + "px"
+    l4.style.width = 900 + "px"
+    l5.style.width = 900 + "px"
+</script>
+
+</html>

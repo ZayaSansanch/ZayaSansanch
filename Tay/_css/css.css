@@ -1,0 +1,20 @@
+html, body {
+    margin: 0; padding: 0;
+    height: 100vh; width: 100vw;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#start {
+    height: 100vh; width: 100vw;
+}
+
+#start-img {
+    position: relative; left: 50vw; top: 20vh;
+    height: 30vw; width: auto;
+    border-radius: 2.5rem;
+}
+
+#start-h1 {
+    position: absolute; left: 10vw; top: 20vh;
+    font-size: 10vh;
+}
