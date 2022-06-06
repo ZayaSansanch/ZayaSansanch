@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play</title>
+</head>
+<body>
+    <div id="pol"></div>
+
+    <div id="player"></div>
+
+    <button id="button" onclick="jump()">Space</button>
+
+    <div id="pregrada1"></div>
+    <div id="pregrada2"></div>
+    <div id="pregrada3"></div>
+
+    <script>
+        player = document.getElementById("player")
+        pregrada1 = document.getElementById("pregrada1")
+        var i
+
+        function jump() {
+            player.style.top = 84 + "%"
+        }
+
+        function  dvijenie(i) {
+            pregrada1.style.right = i + "%"
+        }
+
+        function dvij() {
+            i = 10
+            dvijenie(i)
+            i++
+        }
+    </script>
+
+    <style>
+        #pol {
+            background-color: greenyellow;
+            height: 3%;
+            width: 100%;
+            position: absolute;
+            top: 97%;
+            left: 0%;
+        }
+
+        #player {
+            background-color: brown;
+            height: 13%;
+            width: 6%;
+            position: absolute;
+            top: 84%;
+            left: 10%;
+        }
+
+        button {
+            box-shadow: none;
+            border: none;
+            /* border-radius: 10%; */
+            background-color: cornflowerblue;
+        }
+
+        #button {
+            position: absolute;
+            top: 30%;
+            left: 45%;
+            height: 5%;
+            width: 5%;
+        }
+
+        #pregrada1 {
+            background-color: blueviolet;
+            height: 10%;
+            width: 5%;
+            position: absolute;
+            top: 87%;
+            right: 10%;
+        }
+        #pregrada2 {
+            background-color: blueviolet;
+            height: 10%;
+            width: 5%;
+            position: absolute;
+            top: 87%;
+            right: 40%;
+        }
+        #pregrada3 {
+            background-color: blueviolet;
+            height: 10%;
+            width: 5%;
+            position: absolute;
+            top: 87%;
+            right: -20%;
+        }
+    </style>
+</body>
+</html>

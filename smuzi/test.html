@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test</title>
+</head>
+<body>
+<div class="d1"></div>
+<div class="d2"></div>
+<div class="d3"></div>
+
+<style>
+	.d1 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		left: 46.5%;
+		animation: renderd1 3s ease-in-out infinite;
+	}
+	.d2 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		right: 50%;
+		animation: renderd2 3s ease-in-out infinite;
+	}
+	.d3 {
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: rgb(177, 177, 177);
+		position: absolute;
+		top: 40%;
+		right: 48%;
+		animation: renderd3 3s ease-in-out infinite;
+	}
+
+	@keyframes renderd1 {
+		0% {
+			height: 30px;
+			width: 30px;
+		}
+		33.3% {
+			height: 20px;
+			width: 20px;
+		
+		}
+	}
+	@keyframes renderd2 {
+		33.3% {
+			height: 30px;
+			width: 30px;
+		}
+		66.6% {
+			height: 20px;
+			width: 20px;
+		}
+	}
+	@keyframes renderd3 {
+		66.6% {
+			height: 30px;
+			width: 30px;
+		}
+		100% {
+			height: 20px;
+			width: 20px;
+		}
+	}
+</style>
+
+
+
+
+
+<!-- <div class="kvadrender"></div> -->
+
+<!-- <style type="text/css">
+	.kvadrender {
+		width: 200px;
+		height: 200px;
+		background-color: rgb(0, 0, 0);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		animation: ocnovarender 3s linear infinite;
+	}
+
+	@keyframes ocnovarender {
+		0% {
+			background-color: rgb(0, 0, 0);
+			top: 0px;
+			left: 0px;
+			border-top: 100px solid #68B8AE;
+			border-right: 100px solid transparent;
+		}
+		25% {
+			background-color: rgb(256, 0, 0);
+			top: 0px;
+			left: 300px;
+			border-radius: 150px;
+		}
+		50% {
+			background-color: rgb(0, 256, 0);
+			top: 300px;
+			left: 300px;
+			border-radius: 0px;
+		}
+		75% {
+			background-color: rgb(0, 0, 256);
+			top: 300px;
+			left: 0px;
+			border-radius: 150px;
+		}
+	}
+</style> -->
+
+
+
+
+<!-- <div class="solid">
+	<h1>test</h1>
+</div>
+
+<style type="text/css">
+.solid {
+	width: 100%;
+	height: 50px;
+	background-color: rgb(90, 134, 175);
+	position: absolute;
+	top: -50px;
+	left: 0;
+	border-bottom: 15px solid #000;
+	transition: top 1s ease-in-out;
+}
+
+.solid:hover {
+	top: 0;
+	animation: rendersolid 2s ease-in-out;
+}
+
+.solid h1 {
+	margin: 0;
+	text-align: center;
+}
+
+@keyframes rendersolid {
+	0% {
+		background-color: rgb(90, 134, 175);
+	}
+	50% {
+		background-color: rgb(128, 128, 128);
+	}
+}
+</style> -->
+</body>
+</html>
